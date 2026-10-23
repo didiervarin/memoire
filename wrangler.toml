@@ -1,5 +1,6 @@
 name = "memoire"
 main = "src/worker.js"
+workers_dev = true
 compatibility_date = "2026-06-01"
 
 # Fichiers du site (HTML, CSS, JS, icônes)
