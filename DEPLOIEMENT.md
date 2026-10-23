@@ -5,16 +5,9 @@ Même organisation que Bring2Do : un Worker Cloudflare, une base D1, un mot de p
 
 Les intitulés des menus Cloudflare peuvent varier légèrement selon les mises à jour de leur interface.
 
-## 1. Mettre le code sur GitHub (dépôt `didiervarin/memoire`)
+## 1. Code sur GitHub
 
-1. Sur github.com, clique **New repository**, nomme-le `memoire`, laisse-le vide (sans README), puis **Create repository**.
-2. Choisis ensuite l'une des deux options :
-   - **Option A : Claude pousse le code.** Dis-le-moi une fois le dépôt créé.
-   - **Option B : tu l'envoies toi-même.**
-     1. Décompresse le zip.
-     2. Sur la page du dépôt, clique **uploading an existing file**.
-     3. Glisse **le contenu** du dossier `memoire` (les dossiers `src`, `public` et les fichiers), et non le dossier lui-même.
-     4. Clique **Commit changes**.
+Le code est déjà dans le dépôt `didiervarin/memoire`.
 
 Ne mets jamais le fichier de sauvegarde de tes cartes sur GitHub : le dépôt peut être public.
 
