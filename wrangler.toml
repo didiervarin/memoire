@@ -11,7 +11,7 @@ directory = "./public"
 [[d1_databases]]
 binding = "DB"
 database_name = "memoire"
-database_id = "REMPLACER_PAR_L_ID_DE_TA_BASE_D1"
+database_id = "fbdc92f9-fc7b-4489-a34c-fac6917b1599"
 
 [observability]
 enabled = true
