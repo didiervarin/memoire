@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mémoire</title>
+<meta name="theme-color" content="#2446C7">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Mémoire">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/style.css">
+<style>
+.login{max-width:360px;margin:12vh auto 0;display:flex;flex-direction:column;gap:18px}
+.login .err{color:var(--again);min-height:1.5em;margin:0;font-size:14px}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:8px;font-size:14px;z-index:10}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1 class="brand" data-a="home">Mémoire <i>fiches</i></h1>
+    <span class="mode" id="mode"></span>
+  </header>
+
+  <section id="login" class="login panel" hidden>
+    <h2>Connexion</h2>
+    <form id="login-form" style="display:flex;flex-direction:column;gap:12px">
+      <label class="f">Mot de passe
+        <input id="pass" type="password" autocomplete="current-password" required>
+      </label>
+      <button id="login-submit" class="primary" type="submit">Se connecter</button>
+      <p id="login-error" class="err" role="alert"></p>
+    </form>
+  </section>
+
+  <main id="main" hidden>
+    <div id="app" class="wrap" style="gap:24px"></div>
+  </main>
+</div>
+<input id="imp-file" type="file" accept="application/json,.json" hidden>
+<div id="toast" class="toast" role="status" hidden></div>
+<script src="/app.js"></script>
+</body>
+</html>
